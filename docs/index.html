@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style></style>
+  
+  <meta name="description" content="Leveraging Human Feedback for Text-to-Video Model Alignment">
+  <meta name="keywords" content="Text-to-Video Model, Human Feedback, Reward Model">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> LiFT</title>
+
+
+
+  <link href="./static/css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/bulma.min.css">
+  <link rel="stylesheet" href="./static/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/academicons.min.css">
+  <link rel="stylesheet" href="./static/index.css">
+  <link rel="stylesheet" href="./static/leaderboard.css">
+
+  <script type="text/javascript" src="./static/sort-table.js" defer=""></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer="" src="./static/fontawesome.all.min.js"></script>
+  <script src="./static/bulma-carousel.min.js"></script>
+  <script src="./static/bulma-slider.min.js"></script>
+  <script src="./static/explorer-index.js"></script>
+  <script src="./static/question_card.js"></script>
+
+  <script src="./static/leaderboard_testmini.js"></script>  
+  <script src="./static/output_folders.js" defer=""></script>
+  <script src="./static/model_scores.js" defer=""></script>
+
+  <script src="./static/data_public.js" defer=""></script>
+
+  <style>
+      .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin-top: -20px;
+        }
+    .node {
+      fill: #f8f1e4;
+      stroke: #000;
+      stroke-width: 1;
+      rx: 10;
+      ry: 10;
+    }
+    .node text {
+      font-size: 14px;
+      text-anchor: middle;
+    }
+    .link {
+      fill: none;
+      stroke: #000;
+      stroke-width: 2;
+    }
+    .badge {
+      font-size: 12px;
+    }
+  </style>
+
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold" style="display: inline-block; margin-right: 0px;">
+            <span style="vertical-align: middle">LiFT: Leveraging Human Feedback for Text-to-Video Model Alignment</span>
+            </h1>
+          <!-- <h2 class="subtitle is-3 publication-subtitle" style="display: inline-block; margin-left: 0px;">   
+            Leveraging Human Feedback for Text-to-Video Model Alignment  
+          </h2> -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://codegoat24.github.io/"><b>Yibin Wang</b></a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=XprTQQ8AAAAJ&hl=en"><b>Zhiyu Tan</b></a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=en&user=5yS_tTUAAAAJ"><b>Junyan Wang</b></a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <b>Xiaomeng Yang</b><sup>2</sup>,
+            </span>
+            
+            <span class="author-block">
+              <a href="https://cjinfdu.github.io/"><b>Cheng Jin</b></a><sup>1</sup><sup>†</sup>,</span>
+            <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=pHN-QIwAAAAJ&hl=en"><b>Hao Li</b></a><sup>1,2</sup><sup>†</sup>,</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" style="margin-right: 15px;"><sup>1</sup>Fudan University,</span> <br>
+            <span class="author-block" style="margin-right: 15px;"><sup>2</sup>Shanghai Academy of Artificial Intelligence for Science</span><br>
+            <span class="author-block" style="margin-right: 15px;"><sup>3</sup>Australian Institute for Machine Learning, The University of Adelaide</span>
+            <!-- <span class="paper-block"><b style="color:#f41c1c">ICLR 2024 Oral</b> (85 in 7304, 1.2%)</span> -->
+          </div>
+          <span class=""><sup>†</sup>Corrsponding Author</span>
+        
+          <!-- ArXiv Link. -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/CodeGoat24/LiFT" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Checkpoints(Coming soon)</span>
+                </a>
+              </span> 
+
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Dataset(Coming soon)</span>
+                </a>
+              </span> 
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Begin Teaser -->
+<div>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="content has-text-centered">
+        <img src="static/images/intro.png" alt="data-overview" width="800" height="600">
+      </div>
+      <div class="hero-body">
+        <h2 class="subtitle has-text-justified">
+          <p class="has-text-centered">This work proposes LiFT, a novel fine-tuning method leveraging human feedback for T2V model alignment through three key stages: (1) human feedback collection, (2) reward function learning, and (3) T2V model alignment.</p>
+        </h2>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- End Teaser -->
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+            <p>
+              Recent advancements in text-to-video (T2V) generative models have shown impressive capabilities. However, these models are still inadequate in aligning synthesized videos with human preferences (e.g., accurately reflecting text descriptions), which is particularly difficult to address, as human preferences are inherently subjective and challenging to formalize as objective functions. Therefore, this paper proposes LiFT, a novel fine-tuning method leveraging human feedback for T2V model alignment. Specifically, we first construct a Human Rating Annotation dataset, LiFT-HRA, which includes approximately 10k human annotations comprising both a score and the corresponding rationale. 
+Based on this, we train a reward model LiFT-Critic to learn human feedback-based reward function effectively, which serves as a proxy for human judgment, measuring the alignment between given videos and human expectations.
+Lastly, we leverage the learned reward function to align the T2V model by maximizing the reward-weighted likelihood. 
+As a case study, we apply our pipeline to CogVideoX-2B, showing that the fine-tuned model outperforms the CogVideoX-5B across all 16 metrics, highlighting the potential of human feedback in improving the alignment and quality of synthesized videos.
+            </p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+    <!--/ Abstract. -->
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method Overview</h2>
+
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm;">
+        <img src="./static/images/pipeline.png" alt="pipeline" >
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <h2 class="has-text-justified" style="margin-top: -1cm;">
+        <p class="">Method Overview. This illustration depicts three key steps of our fine-tuning pipeline: <br>
+          (1) <b>Human Feedback Collection.</b> We start by selecting phrases derived from randomly chosen category words and expanding them into detailed prompts using an LLM. These prompts are then used by a T2V model to generate video-text pairs, which humans subsequently annotate to construct LiFT-HRA. <br>
+          (2) <b>Reward Function Learning.</b> Based on this dataset, we train a Visual-Language model, LiFT-Critic, to predict scores across three dimensions, effectively learning a reward function that reflects human preferences. <br>
+          (3) <b>T2V Model Alignment.</b> Finally, LiFT-Critic assesses the videos generated by the T2V model, assigning scores across the defined dimensions. These scores are then mapped into a reward weight, which guides the fine-tuning of the T2V model through reward-weighted learning, enabling it to better align with human preferences.</p>
+      </h2>
+    </div>
+    
+  </div>
+  </div>
+
+
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset: LiFT-HRA (Human Rating Annotation)</h2>
+
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm;">
+        <img src="./static/images/dataset_info.png" alt="pipeline" >
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <h2 class="subtitle has-text-justified" style="margin-top: -1cm;">
+        <p class="has-text-centered"><b>The visualized statistic results of our proposed LIFT-HRA.</b> <br> It illustrates the distribution of category types, the video count across these categories, and the corresponding human feedback distribution for each category.</p>
+      </h2>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 60%;">
+        <img src="./static/images/annotation_ui.png" alt="pipeline" >
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <h2 class="subtitle has-text-justified" style="margin-top: -1cm;">
+        <p class="has-text-centered"><b>An illustration of our annotation UI.</b> <br> Annotators evaluate each video by assigning scores to each dimension and providing the rationale behind their assessments.</p>
+      </h2>
+    </div>
+    
+  </div>
+  </div>
+
+
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Quantitative Comparison</h2>
+
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 70%;">
+        <img src="./static/images/radar.png" alt="pipeline" >
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <h2 class="subtitle has-text-justified" style="margin-top: -1cm;">
+        <p class="has-text-centered"> <b>Visualized evaluation results in multiple evaluation dimensions.</b> <br> The middle two methods in the label region represent the CogVideoX-2B model fine-tuned using different reward learning strategies.</p>
+      </h2>
+    </div>
+    
+  </div>
+  </div>
+
+
+
+</section>
+
+
+      
+
+
+</section>
+
+
+
+<section class="section">
+  <div class="container" >
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Qualitative Comparison</h2>
+        <div class="content has-text-justified">
+
+
+      <!-- Video Grid -->
+      <div class="columns is-multiline">
+        <!-- Video 1 -->
+        
+        <div class="column is-half has-text-centered">
+          
+          <p><b>CogVideX-2B</b></p>
+
+      
+          <video controls style="width: 100%;">
+            <source src="./static/videos/cogx-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          </p>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="column is-half has-text-centered">
+          
+          <p><b>CogVideX-2B-LiFT (Ours)</b></p>
+          <video controls style="width: 100%;">
+            <source src="./static/videos/LiFT-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="has-text-centered">
+        <p>A student sits in a quiet library, surrounded by towering shelves of books. The camera captures their focused expression as they take notes, then pans to reveal sunlight streaming through a large arched window.
+        </p>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="column is-half">
+          <video controls style="width: 100%;">
+            <source src="./static/videos/cogx-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="column is-half">
+          <video controls style="width: 100%;">
+            <source src="./static/videos/LiFT-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <div class="has-text-centered">
+          <p>A farmer harvests ripe apples in an orchard during golden hour. The camera captures the lush trees laden with
+            fruit, the farmer's gentle movements, and the sunlight filtering through the branches.            
+          </p>
+          </div>
+          <br>
+          
+          <!-- Video 5 -->
+          <div class="column is-half">
+            <video controls style="width: 100%;">
+              <source src="./static/videos/cogx-3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <!-- Video 6 -->
+        <div class="column is-half">
+          <video controls style="width: 100%;">
+            <source src="./static/videos/LiFT-3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <div class="has-text-centered">
+          <p>In a classroom, the teacher stands in front of a large chalkboard, explaining a complex concept with vivid gestures while students take notes at their desks.
+          </p>
+          </div>
+          <br>
+        
+          <!-- Video 7 -->
+          <div class="column is-half">
+            <video controls style="width: 100%;">
+              <source src="./static/videos/cogx-4.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <!-- Video 8 -->
+        <div class="column is-half">
+          <video controls style="width: 100%;">
+            <source src="./static/videos/LiFT-4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <div class="has-text-centered">
+          <p>A professor works in his cozy office as snow falls outside the window. Clad in a yellow sweater, he sits at a desk cluttered with books and manuscripts. The camera moves in for a close-up, slowly advancing towards him.
+
+          </p>
+          </div>
+          <br>
+
+          <!-- Video 9 -->
+          <div class="column is-half">
+            <video controls style="width: 100%;">
+              <source src="./static/videos/cogx-5.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <!-- Video 10 -->
+        <div class="column is-half">
+          <video controls style="width: 100%;">
+            <source src="./static/videos/LiFT-5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <div class="has-text-centered">
+          <p>A musician sits on a wooden porch, strumming his acoustic guitar under a starlit sky. The moon casts a soft, silvery glow, illuminating his focused expression and the gentle movements of his hands. The serene night is filled with the melodic sounds of his music, blending harmoniously with the rustling leaves and distant cricket chirps. His attire, a simple white shirt and dark jeans, adds to the tranquil scene, capturing a moment of pure, heartfelt serenade.
+
+          </p>
+          </div>
+          <br>
+          <!-- Video 11 -->
+          <div class="column is-half">
+            <video controls style="width: 100%;">
+              <source src="./static/videos/cogx-6.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <!-- Video 12 -->
+        <div class="column is-half">
+          <video controls style="width: 100%;">
+            <source src="./static/videos/LiFT-6.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <div class="has-text-centered">
+          <p>A person sits at a wooden desk in a quiet room, writing in a leather-bound journal. A desk lamp casts a warm glow, illuminating the open pages. The camera focuses on the person\'s hand as they write, showing a steaming cup of tea and a stack of books nearby.
+
+          </p>
+          </div>
+          <br>
+          <!-- Video 13 -->
+          <div class="column is-half">
+            <video controls style="width: 100%;">
+              <source src="./static/videos/cogx-7.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <!-- Video 14 -->
+        <div class="column is-half">
+          <video controls style="width: 100%;">
+            <source src="./static/videos/LiFT-7.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <div class="has-text-centered">
+          <p>A woman with long, flowing hair stands on a sandy beach, pulling a colorful kite string. The kite, vibrant and large, soars high above her against a clear blue sky. Her casual attire, consisting of a white tank top and denim shorts, complements the relaxed, sunny atmosphere. She looks upwards, her face lit with a sense of joy and freedom, as the kite dances in the breeze, creating a dynamic and lively scene.
+
+          </p>
+          </div>
+          <br>
+        <div id="results-carousel" class="carousel results-carousel">
+
+      </div>
+    </div>
+</div>
+</div></div></section>
+
+
+</body></html>
