@@ -58,59 +58,59 @@ If you have any comments or questions, please open a new issue or feel free to c
   <tr>
       <td>
             <h2>CogVideoX-2B</h2>
-          <video src="docs/static/videos/cogx-1.mp4" width="100%" controls autoplay loop></video>
+          <video src="https://github.com/user-attachments/assets/6e05e678-88ad-499a-b31f-66679746f7b7" width="100%" controls autoplay loop></video>
       </td>
       <td>
             <h2>CogVideoX-2B-LiFT(Ours)</h2>
-          <video src="docs/static/videos/LiFT-1.mp4" width="100%" controls autoplay loop></video>
+          <video src="https://github.com/user-attachments/assets/e45af501-8d89-4db0-8e4c-3a1e1b0e948b" width="100%" controls autoplay loop></video>
       </td>
   </tr>
     <tr>
       <td>
-          <video src="docs/static/videos/cogx-2.mp4" width="100%" controls autoplay loop></video>
+          <video src="https://github.com/user-attachments/assets/a5a35d67-3ce1-415a-a7f4-c2e982b3b318" width="100%" controls autoplay loop></video>
       </td>
       <td>
-          <video src="docs/static/videos/LiFT-2.mp4" width="100%" controls autoplay loop></video>
-      </td>
-  </tr>
-    <tr>
-      <td>
-          <video src="docs/static/videos/cogx-3.mp4" width="100%" controls autoplay loop></video>
-      </td>
-      <td>
-          <video src="docs/static/videos/LiFT-3.mp4" width="100%" controls autoplay loop></video>
+          <video src="https://github.com/user-attachments/assets/aea1c0ff-cc1c-476a-8c0e-7c4a34ed404d" width="100%" controls autoplay loop></video>
       </td>
   </tr>
     <tr>
       <td>
-          <video src="docs/static/videos/cogx-4.mp4" width="100%" controls autoplay loop></video>
+          <video src="https://github.com/user-attachments/assets/8818d282-09e2-47df-9f50-92c6281c7da7" width="100%" controls autoplay loop></video>
       </td>
       <td>
-          <video src="docs/static/videos/LiFT-4.mp4" width="100%" controls autoplay loop></video>
-      </td>
-  </tr>
-    <tr>
-      <td>
-          <video src="docs/static/videos/cogx-5.mp4" width="100%" controls autoplay loop></video>
-      </td>
-      <td>
-          <video src="docs/static/videos/LiFT-5.mp4" width="100%" controls autoplay loop></video>
+          <video src="https://github.com/user-attachments/assets/df1c487a-3a60-4ee2-b8ef-98fafed9bb09" width="100%" controls autoplay loop></video>
       </td>
   </tr>
     <tr>
       <td>
-          <video src="docs/static/videos/cogx-6.mp4" width="100%" controls autoplay loop></video>
+          <video src="https://github.com/user-attachments/assets/59874ca4-d3df-4e76-a1bc-909f5d3424c5" width="100%" controls autoplay loop></video>
       </td>
       <td>
-          <video src="docs/static/videos/LiFT-6.mp4" width="100%" controls autoplay loop></video>
+          <video src="https://github.com/user-attachments/assets/f7ced2e8-7e68-4549-91b7-164d54a7bad3" width="100%" controls autoplay loop></video>
+      </td>
+  </tr>
+    <tr>
+      <td>
+          <video src="https://github.com/user-attachments/assets/c1930e74-b9e2-4df2-84a2-f51bcbf153fe" width="100%" controls autoplay loop></video>
+      </td>
+      <td>
+          <video src="https://github.com/user-attachments/assets/5d310ea7-ba24-4e83-8701-e2bb4217837d" width="100%" controls autoplay loop></video>
+      </td>
+  </tr>
+    <tr>
+      <td>
+          <video src="https://github.com/user-attachments/assets/b426c98a-6816-4fe1-aabf-cf9444262761" width="100%" controls autoplay loop></video>
+      </td>
+      <td>
+          <video src="https://github.com/user-attachments/assets/81ea3a02-979f-43a4-97ca-445f3414b51f" width="100%" controls autoplay loop></video>
       </td>
   </tr>
       <tr>
       <td>
-          <video src="docs/static/videos/cogx-7.mp4" width="100%" controls autoplay loop></video>
+          <video src="https://github.com/user-attachments/assets/b51b211f-20ea-4895-b117-a147bc7f63a8" width="100%" controls autoplay loop></video>
       </td>
       <td>
-          <video src="docs/static/videos/LiFT-7.mp4" width="100%" controls autoplay loop></video>
+          <video src="https://github.com/user-attachments/assets/54e52501-087b-4127-9a3c-fd481c990820" width="100%" controls autoplay loop></video>
       </td>
   </tr>
 </table>
