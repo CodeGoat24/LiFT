@@ -26,7 +26,7 @@
 
 ## 🔥 News
 <!-- - [2024/12/6] 🔥 We release the [paper](https://arxiv.org/pdf/2408.07433). -->
-- [2024/12/6] 🔥 We launch the [project page](https://codegoat24.github.io/LiFT/).
+- [2024/12/6] 🔥 We launch the [project page](https://codegoat24.github.io/LiFT/) and our paper is coming soon!!
 
 ## 📖 Abstract
 
@@ -47,7 +47,8 @@ As a case study, we apply our pipeline to CogVideoX-2B, showing that the fine-tu
 - [ ] Release inference code
 - [ ] Release training code
 - [ ] Release our T2V model alignment dataset 
-- [ ] Release LiFT-HRA dataset
+- [ ] Release dataset LiFT-HRA 10K
+- [ ] Release dataset LiFT-HRA 20K
 
 ## 📧 Contact
 
