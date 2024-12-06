@@ -42,7 +42,7 @@ As a case study, we apply our pipeline to CogVideoX-2B, showing that the fine-tu
 
 ## 🗓️ TODO
 - ✅ Release project page
-- ✅ Release paper
+- [ ] Release paper
 - [ ] Release checkpoints (LiFT-Critic 13B/40B and CogVideoX-2B-LiFT)
 - [ ] Release inference code
 - [ ] Release training code
