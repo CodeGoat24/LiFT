@@ -25,7 +25,7 @@
 </div>
 
 ## 🔥 News
-- [2024/12/6] 🔥 We release the [paper]([https://arxiv.org/pdf/2408.07433](https://arxiv.org/pdf/2412.04814)). Our code is coming soon!!
+- [2024/12/6] 🔥 We release the [paper](https://arxiv.org/pdf/2412.04814). Our code is coming soon!!
 - [2024/12/6] 🔥 We launch the [project page](https://codegoat24.github.io/LiFT/).
 
 ## 📖 Abstract
