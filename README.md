@@ -14,7 +14,7 @@
 (&#8224;corresponding author)
 
 
-<a href="">
+<a href="https://arxiv.org/pdf/2412.04814">
 <img src='https://img.shields.io/badge/arxiv-LiFT-blue' alt='Paper PDF'></a>
 <a href="https://codegoat24.github.io/LiFT/">
 <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
