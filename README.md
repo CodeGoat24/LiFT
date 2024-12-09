@@ -25,8 +25,8 @@
 </div>
 
 ## 🔥 News
-<!-- - [2024/12/6] 🔥 We release the [paper](https://arxiv.org/pdf/2408.07433). -->
-- [2024/12/6] 🔥 We launch the [project page](https://codegoat24.github.io/LiFT/) and our paper is coming soon!!
+- [2024/12/6] 🔥 We release the [paper]([https://arxiv.org/pdf/2408.07433](https://arxiv.org/pdf/2412.04814)). Our code is coming soon!!
+- [2024/12/6] 🔥 We launch the [project page](https://codegoat24.github.io/LiFT/).
 
 ## 📖 Abstract
 
@@ -42,7 +42,7 @@ As a case study, we apply our pipeline to CogVideoX-2B, showing that the fine-tu
 
 ## 🗓️ TODO
 - ✅ Release project page
-- [ ] Release paper
+- ✅ Release paper
 - [ ] Release checkpoints (LiFT-Critic 13B/40B and CogVideoX-2B-LiFT)
 - [ ] Release inference code
 - [ ] Release training code
