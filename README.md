@@ -41,7 +41,7 @@ As a case study, we apply our pipeline to CogVideoX-2B, showing that the fine-tu
 
 ![teaser](./docs/static/images/pipeline.png)
 
-## Installation
+## 🔧 Installation
 
 1. Clone this repository and navigate to LiFT folder
 ```bash
@@ -189,5 +189,5 @@ If you find this work useful or relevant to your research, please kindly cite ou
 
 
 
-# Acknowledgement
+# 🙏 Acknowledgement
 Our work is based on [LLaVA](https://github.com/haotian-liu/LLaVA) and [VILA](https://github.com/NVlabs/VILA), thanks to all the contributors!
