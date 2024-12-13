@@ -114,7 +114,7 @@ bash LiFT_Critic/train/train_critic_40b.sh
 If you have any comments or questions, please open a new issue or feel free to contact [Yibin Wang](https://codegoat24.github.io).
 
 ## 🖊️ Citation
-If you find this work useful or relevant to your research, please kindly cite our paper:
+🌟 If you find our work helpful, please leave us a star and cite our paper.
 
 ```bibtex
 @article{LiFT,
