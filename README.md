@@ -25,8 +25,8 @@
 </div>
 
 ## 🔥 News
-- [2024/12/10] 🔥 We release the training and inference code.
-- [2024/12/9] 🔥 We release the [LiFT-Critic 13B/40B](https://huggingface.co/Fudan-FUXI) version1.0 and [CogVideoX-2B-LiFT](https://huggingface.co/Fudan-FUXI). Our code is coming soon!!
+- [2024/12/10] 🔥🔥 We release the training and inference code. The enhanced version, LiFT-Critic-v1.5 is coming soon!!
+- [2024/12/9] 🔥 We release the [LiFT-Critic-v1.0](https://huggingface.co/Fudan-FUXI)  and [CogVideoX-2B-LiFT](https://huggingface.co/Fudan-FUXI). Our code is coming soon!!
 - [2024/12/9] 🔥 We release the [paper](https://arxiv.org/pdf/2412.04814).
 - [2024/12/6] 🔥 We launch the [project page](https://codegoat24.github.io/LiFT/).
 
@@ -104,7 +104,6 @@ bash LiFT_Critic/train/train_critic_40b.sh
 - ✅ Release CogVideoX-2B-LiFT
 - ✅ Release inference code
 - ✅ Release training code
-- [ ] Release our T2V model alignment dataset
 - [ ] Release LiFT-Critic 13B/40B-v1.5
 - [ ] Release dataset LiFT-HRA 10K
 - [ ] Release dataset LiFT-HRA 20K
