@@ -25,8 +25,9 @@
 </div>
 
 ## 🔥 News
-- [2024/12/10] 🔥🔥 We release the training and inference code. The enhanced version, LiFT-Critic-v1.5 is coming soon!!
-- [2024/12/9] 🔥 We release the [LiFT-Critic-v1.0](https://huggingface.co/Fudan-FUXI)  and [CogVideoX-2B-LiFT](https://huggingface.co/Fudan-FUXI). Our code is coming soon!!
+- [2024/12/16] 🔥 Our **LiFT-HRA** dataset 10K/20K and the enhanced version **LiFT-Critic-v1.5** is coming soon!!
+- [2024/12/10] 🔥🔥 We release the training and inference code.
+- [2024/12/9] 🔥 We release the [**LiFT-Critic-v1.0**](https://huggingface.co/Fudan-FUXI)  and [**CogVideoX-2B-LiFT**](https://huggingface.co/Fudan-FUXI). Our code is coming soon!!
 - [2024/12/9] 🔥 We release the [paper](https://arxiv.org/pdf/2412.04814).
 - [2024/12/6] 🔥 We launch the [project page](https://codegoat24.github.io/LiFT/).
 
