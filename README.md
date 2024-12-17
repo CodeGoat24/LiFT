@@ -19,15 +19,16 @@
 <a href="https://codegoat24.github.io/LiFT/">
 <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
 
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoints-yellow)](https://huggingface.co/Fudan-FUXI)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset(Coming)-yellow)]()
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoints-yellow)](https://huggingface.co/collections/Fudan-FUXI/lift-critic-6756e628d83c390221e02857)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/collections/Fudan-FUXI/lift-hra-6760f063b04baaf6350c9d2e)
 
 </div>
 
 ## 🔥 News
+- [2024/12/17] 🔥 We release our [**LiFT-HRA**](https://huggingface.co/collections/Fudan-FUXI/lift-hra-6760f063b04baaf6350c9d2e) dataset 10K/20K and the enhanced version [**LiFT-Critic-v1.5**](https://huggingface.co/collections/Fudan-FUXI/lift-critic-6756e628d83c390221e02857) !!
 - [2024/12/16] 🔥 Our **LiFT-HRA** dataset 10K/20K and the enhanced version **LiFT-Critic-v1.5** is coming soon!!
 - [2024/12/10] 🔥🔥 We release the training and inference code.
-- [2024/12/9] 🔥 We release the [**LiFT-Critic-v1.0**](https://huggingface.co/Fudan-FUXI)  and [**CogVideoX-2B-LiFT**](https://huggingface.co/Fudan-FUXI). Our code is coming soon!!
+- [2024/12/9] 🔥 We release the [**LiFT-Critic-v1.0**](https://huggingface.co/collections/Fudan-FUXI/lift-critic-6756e628d83c390221e02857)  and [**CogVideoX-2B-LiFT**](https://huggingface.co/collections/Fudan-FUXI/lift-critic-6756e628d83c390221e02857). Our code is coming soon!!
 - [2024/12/9] 🔥 We release the [paper](https://arxiv.org/pdf/2412.04814).
 - [2024/12/6] 🔥 We launch the [project page](https://codegoat24.github.io/LiFT/).
 
@@ -56,7 +57,7 @@ bash ./environment_setup.sh lift
 
 ## 🚀 Inference
 ### LiFT-Critic-13b/40b-lora Weights
-Please download all public LiFT-Critic checkpoints from [Huggingface](https://huggingface.co/Fudan-FUXI). 
+Please download all public LiFT-Critic checkpoints from [Huggingface](https://huggingface.co/collections/Fudan-FUXI/lift-critic-6756e628d83c390221e02857). 
 
 ### Run
 We provide some synthesized videos for quick inference in `./demo` directory.
@@ -75,7 +76,7 @@ python LiFT-Critic/test/run_critic_40b.py --model-path ./LiFT-Critic-40b-lora
 LiFT-Critic is trained on 8 H100 GPUs with 80GB memory.
 
 ### Dataset (Coming soon)
-Please download LiFT-HRA dataset and the 1K subset of the HD-VILA we used in our [paper](https://arxiv.org/pdf/2412.04814).
+Please download our [**LiFT-HRA**](https://huggingface.co/collections/Fudan-FUXI/lift-hra-6760f063b04baaf6350c9d2e) dataset and the 1K subset of the [VIDGEN-1M](https://huggingface.co/datasets/Fudan-FUXI/VIDGEN-1M) (derived from [HD-VILA](https://huggingface.co/datasets/TempoFunk/hdvila-100M)) we used in our [paper](https://arxiv.org/pdf/2412.04814).
 
 Please put them under `./dataset` directory. The data structure is like this:
 ```
@@ -83,8 +84,8 @@ dataset
 ├── LiFT-HRA
 │  ├── LiFT-HRA-data.json
 │  ├── videos
-├── HD-VILA
-│  ├── hd-vila-data.json
+├── VIDGEN
+│  ├── vidgen-data.json
 │  ├── videos
 ```
 
@@ -105,9 +106,9 @@ bash LiFT_Critic/train/train_critic_40b.sh
 - ✅ Release CogVideoX-2B-LiFT
 - ✅ Release inference code
 - ✅ Release training code
-- [ ] Release LiFT-Critic 13B/40B-v1.5
-- [ ] Release dataset LiFT-HRA 10K
-- [ ] Release dataset LiFT-HRA 20K
+- ✅ Release LiFT-Critic 13B/40B-v1.5
+- ✅ Release dataset LiFT-HRA 10K
+- ✅ Release dataset LiFT-HRA 20K
 
 ## 📧 Contact
 
