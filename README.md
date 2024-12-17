@@ -75,7 +75,7 @@ python LiFT-Critic/test/run_critic_40b.py --model-path ./LiFT-Critic-40b-lora
 ## 💻 Training
 LiFT-Critic is trained on 8 H100 GPUs with 80GB memory.
 
-### Dataset (Coming soon)
+### Dataset
 Please download our [**LiFT-HRA**](https://huggingface.co/collections/Fudan-FUXI/lift-hra-6760f063b04baaf6350c9d2e) dataset and the 1K subset of the [VIDGEN-1M](https://huggingface.co/datasets/Fudan-FUXI/VIDGEN-1M) (derived from [HD-VILA](https://huggingface.co/datasets/TempoFunk/hdvila-100M)) we used in our [paper](https://arxiv.org/pdf/2412.04814).
 
 Please put them under `./dataset` directory. The data structure is like this:
