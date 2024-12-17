@@ -26,7 +26,7 @@
 
 ## 🔥 News
 - [2024/12/17] 🔥 We release our optimized evaluation prompts derived from [VBench](https://github.com/Vchitect/VBench) in `Vbench/Vbench_full_info_opt.json` for users to reproduce the results in our [paper](https://arxiv.org/pdf/2412.04814).
-- [2024/12/17] 🔥🔥 We release our [**LiFT-HRA**](https://huggingface.co/collections/Fudan-FUXI/lift-hra-6760f063b04baaf6350c9d2e) dataset 10K/20K and the enhanced version [**LiFT-Critic-v1.5**] !!(https://huggingface.co/collections/Fudan-FUXI/lift-critic-6756e628d83c390221e02857) !!
+- [2024/12/17] 🔥🔥 We release our [**LiFT-HRA**](https://huggingface.co/collections/Fudan-FUXI/lift-hra-6760f063b04baaf6350c9d2e) dataset 10K/20K and the enhanced version [**LiFT-Critic-v1.5**](https://huggingface.co/collections/Fudan-FUXI/lift-critic-6756e628d83c390221e02857) !!
 - [2024/12/16] 🔥 Our **LiFT-HRA** dataset 10K/20K and the enhanced version **LiFT-Critic-v1.5** is coming soon!!
 - [2024/12/10] 🔥🔥 We release the training and inference code.
 - [2024/12/9] 🔥 We release the [**LiFT-Critic-v1.0**](https://huggingface.co/collections/Fudan-FUXI/lift-critic-6756e628d83c390221e02857)  and [**CogVideoX-2B-LiFT**](https://huggingface.co/collections/Fudan-FUXI/lift-critic-6756e628d83c390221e02857). Our code is coming soon!!
