@@ -3,16 +3,16 @@
         "video_id": "demo_0.mp4",
         "video": "0.mp4",
         "caption": "A majestic crane stands gracefully in a shallow, tranquil wetland, its long legs elegantly positioned in the calm water. Its sleek, white feathers contrast beautifully with the surrounding greenery, and its sharp, yellow beak points slightly upward as it surveys its environment. The early morning sunlight filters through the mist, casting a warm, golden glow over the scene, highlighting the crane's elegant form and the serene natural setting.",
-        "semantic consistency": "Good. No obvious issues.",
-        "fidelity issues": "Good. No obvious problems.",
+        "semantic consistency": "Good. Basically correct.",
+        "fidelity issues": "Bad. The crane's eyes in the video were not generated.",
         "motion issues": "Good. No obvious problems."
     },
     {
         "video_id": "demo_1",
         "video": "1.mp4",
         "caption": "A fluffy panda wears a futuristic spacesuit, complete with a helmet and gloves, standing on a high-tech space movie set. The set features sleek, metallic surfaces, glowing control panels, and large screens displaying starry galaxies. The panda is seen wiping a smudge from one of the control panels, its movements careful and deliberate. The lighting is crisp and highlights the panda's white fur and black patches, creating a striking contrast against the modern, sci-fi environment.",
-        "semantic consistency": "Bad. The video does not show the panda wearing a helmet and gloves as mentioned in the caption.",
-        "fidelity issues": "Bad. The panda's face, arms, and hands are distorted in the video.",
-        "motion issues": "Normal. The panda's movements are not smooth."
+        "semantic consistency": "Bad. The video does not show the panda wearing a futuristic spacesuit as mentioned in the caption.",
+        "fidelity issues": "Bad. The panda's limbs are missing in the video, and there are issues with the facial generation.",
+        "motion issues": "Normal. The panda's movements in the video are basically normal, with slight coordination issues."
     }
 ]
