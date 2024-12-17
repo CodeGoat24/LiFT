@@ -16,7 +16,7 @@ echo "node rank:" $SLURM_PROCID
     --deepspeed ./scripts/zero3.json \
     --model_name_or_path Efficient-Large-Model/VILA1.5-40b \
     --version hermes-2 \
-    --data_mixture LiFT-HRA+hdvila \
+    --data_mixture LiFT-HRA+vidgen \
     --vision_tower OpenGVLab/InternViT-6B-448px-V1-2 \
     --mm_vision_select_feature cls_patch \
     --mm_projector mlp_downsample \
