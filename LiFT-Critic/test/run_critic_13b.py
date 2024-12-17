@@ -159,7 +159,7 @@ def eval_model(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model-path", type=str, default="./LiFT-Critic-13b-lora")
+    parser.add_argument("--model-path", type=str, default="./LiFT-Critic-13b-lora-v1.5")
     parser.add_argument("--model-base", type=str, default=f"Efficient-Large-Model/VILA1.5-13b")
     parser.add_argument("--num-video-frames", type=int, default=8)
     parser.add_argument("--image_root", type=str, default=f"./demo/videos/")
