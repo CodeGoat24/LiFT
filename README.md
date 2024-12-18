@@ -110,6 +110,7 @@ bash LiFT_Critic/train/train_critic_40b.sh
 - ✅ Release LiFT-Critic 13B/40B-v1.5
 - ✅ Release dataset LiFT-HRA 10K
 - ✅ Release dataset LiFT-HRA 20K
+- [ ] Release LiFT-Critic 13B/40B-v2.0
 
 ## 📧 Contact
 
