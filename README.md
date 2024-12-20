@@ -73,6 +73,11 @@ LiFT-Critic-40b:
 ```bash
 python LiFT-Critic/test/run_critic_40b.py --model-path ./LiFT-Critic-40b-lora
 ```
+### Examples
+![critic_case](./docs/static/images/critic_case1.png)
+![critic_case](./docs/static/images/critic_case2.png)
+
+
 
 ## 💻 Training
 LiFT-Critic is trained on 8 H100 GPUs with 80GB memory.
