@@ -74,8 +74,7 @@ LiFT-Critic-40b:
 python LiFT-Critic/test/run_critic_40b.py --model-path ./LiFT-Critic-40b-lora
 ```
 ### Examples
-![critic_case](./docs/static/images/critic_case1.png)
-![critic_case](./docs/static/images/critic_case2.png)
+![critic_case](./docs/static/critic_case.png)
 
 
 
