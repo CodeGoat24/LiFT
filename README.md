@@ -15,7 +15,7 @@
 
 
 <a href="https://arxiv.org/pdf/2412.04814">
-<img src='https://img.shields.io/badge/arxiv-LiFT-blue' alt='Paper PDF'></a>
+<img src='https://img.shields.io/badge/arXiv-LiFT-blue' alt='Paper PDF'></a>
 <a href="https://codegoat24.github.io/LiFT/">
 <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
 
@@ -115,6 +115,7 @@ bash LiFT_Critic/train/train_critic_40b.sh
 - ✅ Release LiFT-Critic 13B/40B-v1.5
 - ✅ Release dataset LiFT-HRA 10K
 - ✅ Release dataset LiFT-HRA 20K
+- [ ] Release CogVideoX-5B-LiFT
 - [ ] Release LiFT-Critic 13B/40B-v2.0
 
 ## 📧 Contact
