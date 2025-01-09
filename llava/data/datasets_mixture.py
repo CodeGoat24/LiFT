@@ -57,8 +57,8 @@ def register_datasets_mixtures():
     LiFT_HRA = Dataset(
         dataset_name="LiFT-HRA",
         dataset_type="torch",
-        data_path="../../dataset/LiFT-HRA/LiFT-HRA-data.json",
-        image_path="../../dataset/LiFT-HRA",
+        data_path="dataset/LiFT-HRA/LiFT-HRA-data.json",
+        image_path="dataset/LiFT-HRA",
         description="https://huggingface.co/collections/Fudan-FUXI/lift-hra-6760f063b04baaf6350c9d2e",
     )
     add_dataset(LiFT_HRA)
@@ -66,8 +66,8 @@ def register_datasets_mixtures():
     vidgen = Dataset(
         dataset_name="vidgen",
         dataset_type="torch",
-        data_path="../../dataset/VIDGEN/vidgen-data.json",
-        image_path="../../dataset/VIDGEN",
+        data_path="dataset/VIDGEN/vidgen-data.json",
+        image_path="dataset/VIDGEN",
         description="https://huggingface.co/datasets/Fudan-FUXI/VIDGEN-1M",
     )
     add_dataset(vidgen)
