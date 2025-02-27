@@ -1,0 +1,7 @@
+[
+    {
+        "video": "/path/to/video",
+        "caption": "video_captoin",
+        "score": "reward_score"
+    },
+]
