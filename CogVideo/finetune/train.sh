@@ -15,7 +15,7 @@ accelerate launch --config_file accelerate_config_machine_single.yaml --multi_gp
   --enable_tiling \
   --enable_slicing \
   --instance_data_root $DATASET_PATH \
-  --data_json 'data.json+real_data_openvid' \
+  --data_json './dataset/data.json+./dataset/real_data_openvid.json' \
   --validation_prompt 'A musician sits on a wooden porch, strumming his acoustic guitar under a starlit sky. The moon casts a soft, silvery glow, illuminating his focused expression and the gentle movements of his hands. The serene night is filled with the melodic sounds of his music, blending harmoniously with the rustling leaves and distant cricket chirps. His attire, a simple white shirt and dark jeans, adds to the tranquil scene, capturing a moment of pure, heartfelt serenade.' \
   --validation_prompt_separator ::: \
   --num_validation_videos 1 \
