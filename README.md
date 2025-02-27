@@ -83,7 +83,7 @@ python LiFT-Critic/test/run_critic_40b.py --model-path ./LiFT-Critic-40b-lora
 ## 💻 Training
 LiFT-Critic is trained on 8 H100 GPUs with 80GB memory.
 
-### Dataset
+### LiFT-Critic Dataset
 Please download our [**LiFT-HRA**](https://huggingface.co/collections/Fudan-FUXI/lift-hra-6760f063b04baaf6350c9d2e) dataset and the 1K subset of the [VIDGEN-1M](https://huggingface.co/datasets/Fudan-FUXI/VIDGEN-1M) (derived from [HD-VILA](https://huggingface.co/datasets/TempoFunk/hdvila-100M)) we used in our [paper](https://arxiv.org/pdf/2412.04814).
 
 Please put them under `./dataset` directory. The data structure is like this:
@@ -97,7 +97,7 @@ dataset
 │  ├── videos
 ```
 
-### Training
+### LiFT-Critic Training
 LiFT-Critic-13b
 ```bash
 bash LiFT_Critic/train/train_critic_13b.sh
@@ -105,6 +105,25 @@ bash LiFT_Critic/train/train_critic_13b.sh
 LiFT-Critic-40b
 ```bash
 bash LiFT_Critic/train/train_critic_40b.sh
+```
+
+### CogVideo Dataset
+1. Run CogVideoX to generate videos based on your prompts and save the generated videos in the `./CogVideo/dataset/videos/` directory.
+2. Use LiFT-Critic to score each generated video.
+3. Obtain reward score for each video
+```bash
+python ./CogVideo/process_reward_score.py
+```
+Please put the output file under `./CogVideo/dataset` directory. The data structure is like this:
+```
+dataset
+├── videos/
+├── data.json
+```
+### Reward Learning
+```bash
+cd CogVideo
+bash finetune/train.sh
 ```
 
 ## 🗓️ TODO
@@ -117,6 +136,7 @@ bash LiFT_Critic/train/train_critic_40b.sh
 - ✅ Release LiFT-Critic 13B/40B-v1.5
 - ✅ Release dataset LiFT-HRA 10K
 - ✅ Release dataset LiFT-HRA 20K
+- ✅ Release CogVideoX reward learning code
 - [ ] Release CogVideoX-5B-LiFT
 - [ ] Release LiFT-Critic 13B/40B-v2.0
 
