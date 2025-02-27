@@ -113,7 +113,7 @@ bash LiFT_Critic/train/train_critic_40b.sh
 2. Use LiFT-Critic to score each generated video.
 3. Obtain reward score for each video
 ```bash
-python ./CogVideo/process_reward_score.py
+python CogVideo/process_reward_score.py
 ```
 Please put the output file under `./CogVideo/dataset` directory. The data structure is like this:
 ```
