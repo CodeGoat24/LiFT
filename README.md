@@ -25,6 +25,7 @@
 </div>
 
 ## 🔥 News
+- [2024/3/6] 🔥 We released the latest version of [paper](https://arxiv.org/pdf/2412.04814). Welcome to download the latest version !!
 - [2025/2/27] 🔥🔥 We released the reward learning code for CogVideoX in `./CogVideo` directory !!
 - [2024/12/25] 🔥 We released the supplementary of our [paper](https://arxiv.org/pdf/2412.04814).
 - [2024/12/24] 🔥🔥 We have updated our [**LiFT-HRA**](https://huggingface.co/collections/Fudan-FUXI/lift-hra-6760f063b04baaf6350c9d2e) 10K/20K dataset and [**LiFT-Critic-v1.5**](https://huggingface.co/collections/Fudan-FUXI/lift-critic-6756e628d83c390221e02857). Welcome to download the latest version !!
