@@ -25,6 +25,7 @@
 </div>
 
 ## 🔥 News
+- [2024/3/27] 🔥 We released [**VIDGEN-1K**](https://huggingface.co/collections/Fudan-FUXI/lift-hra-6760f063b04baaf6350c9d2e) to simplify training data preparation!
 - [2024/3/6] 🔥 We released the latest version of [paper](https://arxiv.org/pdf/2412.04814). Welcome to download the latest version !!
 - [2025/2/27] 🔥🔥 We released the reward learning code for CogVideoX in `./CogVideo` directory !!
 - [2024/12/25] 🔥 We released the supplementary of our [paper](https://arxiv.org/pdf/2412.04814).
