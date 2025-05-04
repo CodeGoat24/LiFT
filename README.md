@@ -140,8 +140,6 @@ bash finetune/train.sh
 - ✅ Release dataset LiFT-HRA 10K
 - ✅ Release dataset LiFT-HRA 20K
 - ✅ Release CogVideoX reward learning code
-- [ ] Release CogVideoX-5B-LiFT
-- [ ] Release LiFT-Critic 13B/40B-v2.0
 
 ## 📧 Contact
 
@@ -153,7 +151,7 @@ If you have any comments or questions, please open a new issue or feel free to c
 ```bibtex
 @article{LiFT,
   title={LiFT: Leveraging Human Feedback for Text-to-Video Model Alignment.},
-  author={Wang, Yibin and Tan, Zhiyu, and Wang, Junyan and Yang, Xiaomeng and Jin, Cheng and Li, Hao},
+  author={Wang, Yibin and Tan, Zhiyu and Wang, Junyan and Yang, Xiaomeng and Jin, Cheng and Li, Hao},
   journal={arXiv preprint arXiv:2412.04814},
   year={2024}
 }
